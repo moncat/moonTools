@@ -1,5 +1,10 @@
 package org.moon.tools;
 
+import com.google.common.collect.Maps;
+import org.checkerframework.checker.nullness.qual.Nullable;
+
+import java.util.HashMap;
+
 /**
  * @Projectname: moonTools
  * @Filename: MoMapUtil
@@ -13,4 +18,9 @@ public class MoMapUtil {
         return System.nanoTime()+"-------------"+str;
     }
 
+    public  static HashMap  map2(String str){
+        final HashMap<@Nullable Object, @Nullable Object> hashMap = Maps.newHashMap();
+        hashMap.put("name","carl");
+        return hashMap;
+    }
 }
